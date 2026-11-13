@@ -1,0 +1,166 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #eef3f8;
+    color: #333;
+}
+
+header {
+    background: #102a43;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.container {
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 15px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    color: #102a43;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    background: #087e8b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+button:hover {
+    background: #055c65;
+}
+
+.balance-box {
+    background: #102a43;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 10px;
+}
+
+.balance-box h1 {
+    font-size: 35px;
+    margin-top: 10px;
+}
+
+.dashboard h3 {
+    margin: 20px 0;
+    color: #102a43;
+}
+
+.buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.buttons button {
+    flex: 1;
+}
+
+.history-btn {
+    background: #e09f3e;
+}
+
+.history-btn:hover {
+    background: #bd7920;
+}
+
+.logout {
+    background: #d62828;
+    margin-top: 25px;
+}
+
+.logout:hover {
+    background: #a4161a;
+}
+
+#history {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f4f7fa;
+    border-radius: 8px;
+}
+
+#transactionList {
+    list-style: none;
+}
+
+#transactionList li {
+    padding: 12px;
+    margin: 8px 0;
+    background: white;
+    border-left: 4px solid #087e8b;
+    border-radius: 5px;
+    overflow-wrap: anywhere;
+}
+
+#message {
+    text-align: center;
+    font-weight: bold;
+    margin: 15px;
+}
+
+footer {
+    background: #102a43;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media(max-width: 600px) {
+    .container {
+        margin: 20px auto;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 0;
+    }
+}
